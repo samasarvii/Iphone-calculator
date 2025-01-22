@@ -75,13 +75,3 @@ function App() {
 
 export default App;
 
-//problems to solve : inable to use the keyboard to input the numbers and operators
-//solution : add event listener to the window object to listen for keydown event
-/* 
-problem to solve : the calculator is not responsive
-solution : add media query to the css file
-
-problem to solve : enable double 0 to be inputed
-solution : add a condition to check if the last input is 0 and the current input is 0
-
-*/

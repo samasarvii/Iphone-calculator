@@ -1,0 +1,89 @@
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+.calculator {
+  display: grid ;
+  width: 350px ;
+  height: 725px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ff9100;
+  border-radius: 50px;
+  padding: 25px;
+  background: #000000;
+  
+  
+}
+
+.display {
+  width: 100%;
+  height: 250px;
+  background: #000000;
+  margin-bottom: 20px;
+  line-height: 50px;
+  text-align: right;
+  padding: 15 px;
+  font-size: 2.5em;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: azure;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 80px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #2585bd;
+  transition: background 0.2s ease;
+  background: #1a1313;
+  color: #ffffff;
+  font-size: 1.5em;
+
+}
+
+button:hover {
+  background: #202022;
+}
+
+button:active {
+  background: #515255;
+}
+.grey{
+  background: #524c4c;
+  color: #ffffff;
+}
+.grey:hover{
+  background: #7a7a7a;
+}
+.grey:active{
+  background: #b3b3b3;
+}
+.orange{
+  background: #ff9100;
+  color: #ffffff;
+}
+.orange:hover{
+  background: #ffbb33;
+}
+.orange:active{
+  background: #eac99f;
+}
+.zero{
+  grid-column: span 2;
+  border-radius: 50px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  font-size: 1.5em;
+}

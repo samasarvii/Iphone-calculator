@@ -7,12 +7,12 @@ function App() {
 
   const handleMouseDown = () => {
     longPressTimeout = setTimeout(() => {
-      setInput(''); // Clear all input on long press
-    }, 800); // Adjust the time (800ms) for the long press duration
+      setInput(''); 
+    }, 800);
   };
 
   const handleMouseUp = () => {
-    clearTimeout(longPressTimeout); // Cancel the long press if mouse is released
+    clearTimeout(longPressTimeout);
   };
 
   return (
@@ -23,12 +23,12 @@ function App() {
         <button className='grey'
           onClick={() => {
             if (input) {
-              setInput(input.slice(0, -1)); // Short press: Delete last character
+              setInput(input.slice(0, -1));
             }
           }}
-          onMouseDown={handleMouseDown} // Start long press
-          onMouseUp={handleMouseUp} // Cancel long press on release
-          onMouseLeave={handleMouseUp} // Cancel long press if mouse leaves button
+          onMouseDown={handleMouseDown} 
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {input ? 'Del' : 'AC'}
         </button>
@@ -57,9 +57,9 @@ function App() {
   function toggleSign() {
     if (input) {
       if (input.startsWith('-')) {
-        setInput(input.slice(1)); // Remove the '-' to make it positive
+        setInput(input.slice(1)); 
       } else {
-        setInput('-' + input); // Add '-' to make it negative
+        setInput('-' + input);
       }
     }
   }
